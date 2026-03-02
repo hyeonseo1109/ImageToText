@@ -9,9 +9,7 @@ export const useOcr = () => {
   const processImage = async (file: File) => {
     isLoading.value = true
     const worker = await createWorker('kor+eng')
-    const {
-      data: { text }
-    } = await worker.recognize(file)
+    const text = await (await worker.recognize(file)).data.text
     ocrResult.value = text
     await worker.terminate()
     isLoading.value = false

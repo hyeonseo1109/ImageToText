@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
 import '@/app/styles/style.css.ts'
+import MainPage from '@/pages/main/mainPage.vue';
 </script>
 
 <template>
   <main>
-    <header><h1>OCR Scanner</h1></header>
-    <OcrBoard /> </main>
+    <MainPage />
+    </main>
 </template>

@@ -2,6 +2,9 @@
 
 import { useOcr } from '@/features/change-text/model'
 import { ref } from 'vue'
+import ResultViewer from '@/entities/ocr-content/ui/ResultViewer.vue'
+import ImagePreview from '@/entities/ocr-content/ui/ImagePreview.vue'
+import UploadButton from '@/features/change-text/ui/UploadButton.vue'
 
 const { ocrResult, isLoading, processImage } = useOcr()
 const previewUrl = ref('')
