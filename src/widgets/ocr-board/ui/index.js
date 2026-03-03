@@ -1,1 +1,1 @@
-export * from './OcrBoard.vue';
+export * from './OcrBoard';

@@ -1,2 +1,2 @@
-export * from './ImagePreview.vue';
-export * from './ResultViewer.vue';
+export { default as ImagePreview } from './ImagePreview.vue';
+export { default as ResultViewer } from './ResultViewer.vue';

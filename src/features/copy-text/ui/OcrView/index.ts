@@ -1,1 +1,1 @@
-export * from './index.vue'
+export { default as OcrView } from './OcrView.vue'
