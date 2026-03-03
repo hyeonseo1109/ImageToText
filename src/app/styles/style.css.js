@@ -48,5 +48,5 @@ globalStyle('::-webkit-scrollbar-thumb', {
 });
 // 4. 핸들 위에 마우스 올렸을 때
 globalStyle('::-webkit-scrollbar-thumb:hover', {
-    backgroundColor: '#364FC7'
+    backgroundColor: '#868686'
 });

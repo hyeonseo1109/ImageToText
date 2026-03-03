@@ -35,7 +35,7 @@ const handleFileChange = (event: Event) => {
 
     <div v-if="ocrResult" :class="styles.resultSection">
       <div :class="styles.resultHeader">
-        <span :class="styles.resultLabel">추출된 결과</span>
+        <span :class="styles.resultLabel">텍스트 추출 결과</span>
         <button 
           @click="copyToClipboard" 
           :class="[styles.copyButton, isCopied && styles.copySuccess]"

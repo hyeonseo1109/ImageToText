@@ -93,7 +93,5 @@ export const copyButton = style({
 })
 
 export const copySuccess = style({
-  backgroundColor: '#4C6EF5',
-  borderColor: '#40c057',
-  color: '#2b8a3e'
+  backgroundColor: '#4C6EF5'
 })
