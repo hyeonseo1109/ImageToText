@@ -25,7 +25,7 @@ globalStyle('body', {
 
 globalStyle('#app', {
   width: '100%',
-  minHeight: '100%',
+  height: '100%',
   fontFamily: 'inherit'
 })
 

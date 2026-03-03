@@ -1,10 +1,11 @@
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
   width: '100%',
   height: '100%',
-  overflowY: 'auto'
+  overflowY: 'auto',
+  overflowX: 'hidden',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center'
 })
