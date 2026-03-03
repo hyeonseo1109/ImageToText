@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from '@/shared/ui/Header/index.vue'
-import '@/app/styles/style.css.ts'
+import '@/app/styles/style.css'
 import OcrBoard from '@/widgets/ocr-board/ui/OcrBoard.vue'
 </script>
 
