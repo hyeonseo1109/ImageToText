@@ -17,7 +17,7 @@ const handleFile = (file: File) => {
 
 <template>
   <div class="ocr-board">
-    <UploadButton @upload="handleFile" />
+    <!-- <UploadButton @upload="handleFile" /> -->
     <div class="layout">
       <ImagePreview :src="previewUrl" />
       <ResultViewer :content="ocrResult" :loading="isLoading" />

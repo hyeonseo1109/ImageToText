@@ -9,8 +9,7 @@ globalStyle('html', {
   height: '100%',
   color: 'black',
   boxSizing: 'border-box',
-  overflow: 'hidden',
-  userSelect: 'none'
+  overflow: 'hidden'
 })
 
 globalStyle('body', {

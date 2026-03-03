@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import Header from '@/shared/ui/Header/index.vue'
+
 import '@/app/styles/style.css'
 import { OcrBoard } from '@/widgets/ocr-board/ui'
 import { OcrView } from '@/features/copy-text/ui'
+import * as styles from './style.css'
 </script>
 
 <template>
-  <main>
-
-    <Header>OCR 결과 확인</Header>
-    <OcrBoard /> 
-    <OcrView />
-  </main>
+<div :class="styles.container">
+  <OcrView />
+  <OcrBoard /> 
+</div>
 </template>
