@@ -27,7 +27,6 @@ export const fileLabel = style({
   color: 'white',
   borderRadius: '8px',
   cursor: 'pointer',
-  fontWeight: 'bold',
   transition: 'background 0.2s',
   selectors: {
     '&:hover': { backgroundColor: '#364FC7' }
@@ -89,7 +88,7 @@ export const copyButton = style({
   cursor: 'pointer',
   transition: 'all 0.2s',
   selectors: {
-    '&:hover': { backgroundColor: '#e9ecef' }
+    '&:hover': { backgroundColor: '#364FC7' }
   }
 })
 
