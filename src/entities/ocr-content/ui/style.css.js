@@ -8,6 +8,7 @@ export const previewCard = style({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#f8f9fa',
+    color: '#333',
     overflow: 'hidden'
 });
 export const previewImage = style({

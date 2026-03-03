@@ -5,6 +5,7 @@ const googleUrl = `https://vision.googleapis.com/v1/images:annotate?key=`
 export const useOcr = () => {
   const ocrResult = ref('')
   const isLoading = ref(false)
+  const isCopied = ref(false)
 
   const fileToBase64 = (file: File): Promise<string> => {
     return new Promise((resolve, reject) => {
@@ -25,14 +26,11 @@ export const useOcr = () => {
     try {
       const base64Image = await fileToBase64(file)
       const apiKey = import.meta.env.VITE_GOOGLE_VISION_API_KEY
-
       const url = `${googleUrl}${apiKey}`
 
       const response = await fetch(url, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           requests: [
             {
@@ -58,5 +56,23 @@ export const useOcr = () => {
     }
   }
 
-  return { ocrResult, isLoading, processImage }
+  // 클립보드에 텍스트를 복사하는 함수
+  const copyToClipboard = async () => {
+    if (!ocrResult.value) return
+
+    try {
+      await navigator.clipboard.writeText(ocrResult.value)
+
+      isCopied.value = true
+
+      setTimeout(() => {
+        isCopied.value = false
+      }, 2000)
+    } catch (err) {
+      console.error('복사 실패:', err)
+      alert('복사 기능이 지원되지 않는 브라우저입니다.')
+    }
+  }
+
+  return { ocrResult, isLoading, isCopied, processImage, copyToClipboard }
 }
