@@ -30,7 +30,7 @@ const handleFileChange = (event: Event) => {
     </div>
 
     <div v-if="isLoading" :class="styles.loadingText">
-      Google Vision API가 글자를 읽고 있습니다...
+      글자를 읽고 있습니다
     </div>
 
     <div v-if="ocrResult" :class="styles.resultSection">
