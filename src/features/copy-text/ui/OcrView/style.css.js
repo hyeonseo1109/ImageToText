@@ -1,9 +1,9 @@
 import { style } from '@vanilla-extract/css';
 export const container = style({
-    maxWidth: '600px',
+    width: '100%',
+    height: '100%',
     margin: '40px auto',
-    padding: '0 20px',
-    fontFamily: 'sans-serif'
+    padding: '0 20px'
 });
 export const title = style({
     textAlign: 'center',
@@ -40,7 +40,8 @@ export const resultSection = style({
     border: '1px solid #dee2e6',
     borderRadius: '12px',
     overflow: 'hidden',
-    backgroundColor: '#f8f9fa'
+    backgroundColor: '#f8f9fa',
+    height: '90%'
 });
 export const resultHeader = style({
     display: 'flex',
@@ -60,8 +61,8 @@ export const resultContent = style({
     fontSize: '16px',
     lineHeight: '1.6',
     color: '#212529',
-    whiteSpace: 'pre-wrap', // 줄바꿈과 공백 유지
-    minHeight: '150px'
+    whiteSpace: 'pre-wrap',
+    height: '90%'
 });
 export const copyButton = style({
     padding: '6px 12px',

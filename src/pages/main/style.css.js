@@ -1,8 +1,8 @@
 import { style } from '@vanilla-extract/css';
-export const main = style({
+export const container = style({
     width: '100%',
     height: '100%',
-    overflow: 'hidden',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    alignItems: 'center'
 });

@@ -17,8 +17,8 @@ const handleFile = (file: File) => {
 <template>
   <div class="ocr-board">
     <div class="layout">
-      <ImagePreview :src="previewUrl" />
-      <ResultViewer :content="ocrResult" :loading="isLoading" />
+      <!-- <ImagePreview :src="previewUrl" /> -->
+      <!-- <ResultViewer :content="ocrResult" :loading="isLoading" /> -->
     </div>
   </div>
 </template>
