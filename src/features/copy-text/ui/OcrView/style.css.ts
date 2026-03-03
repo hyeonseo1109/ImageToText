@@ -50,7 +50,7 @@ export const resultSection = style({
   borderRadius: '12px',
   overflow: 'hidden',
   backgroundColor: '#f8f9fa',
-  height: '60%',
+  height: '100%',
   width: '100%'
 })
 
