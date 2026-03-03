@@ -3,7 +3,11 @@ export const container = style({
     width: '100%',
     height: '100%',
     margin: '40px auto',
-    padding: '0 20px'
+    padding: '0 20px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
 });
 export const title = style({
     textAlign: 'center',
@@ -41,7 +45,8 @@ export const resultSection = style({
     borderRadius: '12px',
     overflow: 'hidden',
     backgroundColor: '#f8f9fa',
-    height: '90%'
+    height: '90%',
+    width: '90%'
 });
 export const resultHeader = style({
     display: 'flex',
@@ -57,17 +62,18 @@ export const resultLabel = style({
     color: '#495057'
 });
 export const resultContent = style({
-    padding: '20px',
+    padding: '5rem',
     fontSize: '16px',
     lineHeight: '1.6',
     color: '#212529',
     whiteSpace: 'pre-wrap',
-    height: '90%'
+    height: '100%',
+    overflowY: 'auto'
 });
 export const copyButton = style({
     padding: '6px 12px',
     fontSize: '13px',
-    backgroundColor: '#f1f3f5',
+    backgroundColor: '#4C6EF5',
     border: '1px solid #ced4da',
     borderRadius: '6px',
     cursor: 'pointer',
@@ -77,7 +83,7 @@ export const copyButton = style({
     }
 });
 export const copySuccess = style({
-    backgroundColor: '#ebfbee',
+    backgroundColor: '#4C6EF5',
     borderColor: '#40c057',
     color: '#2b8a3e'
 });

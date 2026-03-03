@@ -3,24 +3,22 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
   width: '100%',
   height: '100%',
-  margin: '40px auto',
-  padding: '0 20px',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  justifyContent: 'start',
   alignItems: 'center'
 })
 
 export const title = style({
   textAlign: 'center',
   color: '#333',
-  marginBottom: '30px'
+  marginBottom: '30px',
+  fontSize: '2rem'
 })
 
 export const uploadSection = style({
   display: 'flex',
-  justifyContent: 'center',
-  marginBottom: '20px'
+  justifyContent: 'center'
 })
 
 export const fileLabel = style({
@@ -33,7 +31,8 @@ export const fileLabel = style({
   transition: 'background 0.2s',
   selectors: {
     '&:hover': { backgroundColor: '#364FC7' }
-  }
+  },
+  fontSize: '0.8rem'
 })
 
 export const hiddenInput = style({
@@ -52,7 +51,8 @@ export const resultSection = style({
   borderRadius: '12px',
   overflow: 'hidden',
   backgroundColor: '#f8f9fa',
-  height: '90%'
+  height: '60%',
+  width: '100%'
 })
 
 export const resultHeader = style({
@@ -71,7 +71,7 @@ export const resultLabel = style({
 })
 
 export const resultContent = style({
-  padding: '20px',
+  padding: '1rem 0 4rem 0',
   fontSize: '16px',
   lineHeight: '1.6',
   color: '#212529',
@@ -83,7 +83,7 @@ export const resultContent = style({
 export const copyButton = style({
   padding: '6px 12px',
   fontSize: '13px',
-  backgroundColor: '#f1f3f5',
+  backgroundColor: '#4C6EF5',
   border: '1px solid #ced4da',
   borderRadius: '6px',
   cursor: 'pointer',
@@ -94,7 +94,7 @@ export const copyButton = style({
 })
 
 export const copySuccess = style({
-  backgroundColor: '#ebfbee',
+  backgroundColor: '#4C6EF5',
   borderColor: '#40c057',
   color: '#2b8a3e'
 })
